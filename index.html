@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>appsfordays</title>
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.google.com/specimen/Roboto?selection.family=Roboto">
+  </head>
+  <style>
+    html, body {
+      font-family: "Roboto", Arial, sans-serif;
+      height: 100%;
+    }
+    body {
+      margin: 0;
+    }
+    .container{
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .wrapper{
+      align-self: center;
+      text-align: center;
+    }
+    img.face{
+      width: 150px;
+    }
+    p{
+      margin-bottom: 2em;
+    }
+    span.message{
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1em;
+    }
+    span.text{
+      vertical-align: super;
+    }
+    img.fblogo{
+      height: 20px;
+      width: 20px;
+    }
+    .button{
+      color: #FFFFFF;
+      background-color: #0084ff;
+      vertical-align: middle;
+      border-radius: 3px;
+      padding: 8px 10px;
+      font-size: 15px;
+    }
+    .footer{
+      margin-top: 3.5em;
+    }
+    a{
+      text-decoration: none;
+      color: #818a91;
+      font-size: 12.8px;
+    }
+  </style>
+  <script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '1678638095724206',
+            xfbml      : true,
+            version    : 'v2.6'
+        });
+    };
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '487214228111052');
+    fbq('track', "PageView");
+  </script>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <img src="./app-damon-icon.png" alt="icon" class="face">
+        <p>App Damon is da bomb.</p>
+        <a href="https://m.me/311558562512157" target="_blank" id="u_0_1" class="button">
+          <span class="message">
+            <img src="./fblogo.png" alt="" class='fblogo'>
+            <span class="text">
+              Message Us
+            </span>
+          </span>
+        </a>
+        <div class="footer">
+          <a href="https://m.me/311558562512157">App Damon</a>
+          &nbsp;•&nbsp;
+          <a href="/terms">Terms</a>
+          &nbsp;•&nbsp;
+          <a href="#" target="_new">© 2016</a>
+        </div>
+      </div>
+
+    </div>
+
+
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-4533246-77', 'auto');
+      ga('send', 'pageview');
+  </script>
+  </body>
+</html>
